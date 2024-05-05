@@ -1,17 +1,23 @@
 {
-  "name": "practica-1",
+  "name": "node-with-ts",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
-  "type": "module",
+  "main": "dist/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/app.js"
+    "start": "tsc && node dist/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.16.1",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.3"
+  },
   "dependencies": {
-    "express": "^4.19.2"
+    "dotenv": "^16.4.5",
+    "express": "^4.16.4",
+    "i": "^0.3.7",
+    "signale": "^1.4.0"
   }
 }
