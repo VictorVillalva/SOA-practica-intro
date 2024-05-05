@@ -8,7 +8,7 @@ export class CreateStudentUseCase {
         try {
             return await this.repository.create(name,extraInfo)
         }catch (e) {
-            console.log(" ",e)
+            console.log("* UseCase-CreateStudent / ERROR! : ",e)
             return null;
         }
     }
